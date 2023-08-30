@@ -6,7 +6,7 @@ export const THEME = extendTheme({
       700: '#004358'
     },
     secondary: {
-      700: '#EFEDED'
+      700: '#E6E6E6'
     },
     blue: {
       700: '#BEE5F1',
@@ -22,7 +22,8 @@ export const THEME = extendTheme({
     red:{
       700: '#B11010',
     },
-    white: '#FFFFFF'
+    white: '#FFFFFF',
+    black:'#000',
   },
  
   fontSizes: {
