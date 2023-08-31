@@ -1,10 +1,10 @@
 import React from 'react';
 import { VStack, Text, Image} from 'native-base';
 import { ButtonIcon } from '../components/ButtonIcon';
-
-import {  ShoppingCart} from 'phosphor-react-native';
+import { useNavigation } from '@react-navigation/native';
 
 export function Home() {
+  const navigation = useNavigation();
   return (
     <VStack flex={1} mt={5} backgroundColor="secondary.700">
         <VStack backgroundColor="primary.700" height={60} alignItems="center" justifyContent="center" mb={5}>
@@ -17,7 +17,7 @@ export function Home() {
         </VStack>
 
        <ButtonIcon title='CAIXA'/>
-       <ButtonIcon title='PRODUTO' />
+       <ButtonIcon title='PRODUTO' onPress={() => navigation.navigate('products')}/>
        <ButtonIcon title='FINANCEIRO' />
     </VStack>
   );
