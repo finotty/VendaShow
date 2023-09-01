@@ -12,6 +12,8 @@ export function Button({title, ...rest}: Props) {
      h={14}
      fontSize='sm'
      rounded={12}
+     w='90%'
+     alignSelf='center'
      _pressed={{ bg:"blue.700"}}
      
     {...rest}>

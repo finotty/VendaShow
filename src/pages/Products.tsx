@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { VStack,HStack, Text, IconButton, useTheme,FlatList, } from 'native-base';
 import { CaretLeft, MagnifyingGlass } from "phosphor-react-native";
 import { useNavigation } from '@react-navigation/native';
@@ -9,6 +9,8 @@ import { Button } from '../components/Button';
 export function Products() {
     const {colors} = useTheme();
     const navigation = useNavigation();
+
+    const [addProductModal, setAddProductModal] = useState(false);
 
     const cardData = [
         { product: "Produto 1", description: "descrição do produto", value: 1.00, amount:10 },
@@ -37,6 +39,9 @@ export function Products() {
         { title: "Categoria 5" },
       ];
 
+    function toggleModal() {
+        setAddProductModal(!addProductModal);
+      };
     function renderItem({ item }:any) {
         return (<ButtonCategory title={item.title} />);
       }
@@ -81,9 +86,11 @@ export function Products() {
             />
 
              <VStack  position='absolute' alignSelf='flex-end' top='75%' right={2}>
-                <Button title='+' w={65} h={65} rounded={35} />
+                <Button title='+' w={65} h={65} rounded={35} onPress={() => navigation.navigate('regproduct')}/>
              </VStack>
         </VStack>
+
+       
     </VStack>
   );
 }

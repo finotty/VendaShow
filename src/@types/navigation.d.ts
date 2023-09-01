@@ -7,6 +7,7 @@ export declare global {
             products:undefined;
             sellerFinal:undefined;
             sellerInicial:undefined;
+            regproduct:undefined;
         }
     }
 }
