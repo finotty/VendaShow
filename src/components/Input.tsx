@@ -5,7 +5,7 @@ export function Input({...rest}: IInputProps) {
   return (
     <NativeBaseInput 
      // bg="blue.700"
-      h={14}
+      height={20}
       //size="md"
       w='95%'
       borderBottomWidth={1}
@@ -13,6 +13,7 @@ export function Input({...rest}: IInputProps) {
       //fontFamily="body"
       color="white"
       placeholderTextColor="gray.300"
+      ml={3}
       borderWidth={0}
       _focus={{
        bg:'white',
