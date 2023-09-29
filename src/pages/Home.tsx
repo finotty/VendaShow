@@ -16,7 +16,7 @@ export function Home() {
           />
         </VStack>
 
-       <ButtonIcon title='CAIXA'/>
+       <ButtonIcon title='CAIXA' onPress={() => navigation.navigate('sellerInicial')}/>
        <ButtonIcon title='PRODUTO' onPress={() => navigation.navigate('products')}/>
        <ButtonIcon title='FINANCEIRO' />
     </VStack>

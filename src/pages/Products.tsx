@@ -23,11 +23,7 @@ export function Products() {
         { product: "Produto 4", description: "descrição do produto", value: 18.00, amount:10 },
         { product: "Produto 5", description: "descrição do produto", value: 100.00, amount:10 },
         { product: "Produto 4", description: "descrição do produto", value: 18.00, amount:10 },
-        { product: "Produto 5", description: "descrição do produto", value: 100.00, amount:10 },
-        { product: "Produto 2", description: "descrição do produto", value: 20.00, amount:10 },
-        { product: "Produto 3", description: "descrição do produto", value: 15.00, amount:10 },
-        { product: "Produto 4", description: "descrição do produto", value: 18.00, amount:10 },
-        { product: "Produto 5", description: "descrição do produto", value: 100.00, amount:10 },
+     
       
       ];
       const buttonData = [

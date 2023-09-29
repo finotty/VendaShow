@@ -11,7 +11,7 @@ export function Input({...rest}: IInputProps) {
       borderBottomWidth={1}
       fontSize="md"
       //fontFamily="body"
-      color="white"
+      color="#000"
       placeholderTextColor="gray.300"
       ml={3}
       borderWidth={0}
